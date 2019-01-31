@@ -1,0 +1,47 @@
+{
+	"name": "pear/html_ajax",
+	"description": "PHP and JavaScript AJAX library",
+	"type": "library",
+	"autoload": {
+		"psr-0": {
+			"HTML": "HTML"
+		}
+	},
+	"require": {
+		"php": ">=4.1.0"
+	},
+	"license": "LGPL",
+	"authors": [
+		{
+			"name": "Elizabeth Smith"
+		},
+		{
+			"name": "Joshua Eichorn"
+		},
+		{
+			"name": "David Coallier"
+		},
+		{
+			"name": "Laurent Yaish"
+		},
+		{
+			"name": "Arpad Ray"
+		},
+		{
+			"name": "Christian Weiske"
+		},
+		{
+			"name": "Ken Guest"
+		},
+		{
+			"name": "Daniel O'Connor"
+		},
+		{
+			"name": "fabricat"
+		},
+		{
+			"name": "Werner Wank"
+		}
+	],
+	"minimum-stability": "beta"
+}
