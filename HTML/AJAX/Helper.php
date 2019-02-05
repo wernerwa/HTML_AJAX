@@ -164,8 +164,6 @@ class HTML_AJAX_Helper
 	 * @return string
 	 */
 	function jsonEncode($input) {
-		require_once 'HTML/AJAX/Serializer/JSON.php';
-
 		$s = new HTML_AJAX_Serializer_JSON();
 		return $s->serialize($input);
 	}

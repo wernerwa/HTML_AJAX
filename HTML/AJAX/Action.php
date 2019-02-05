@@ -14,12 +14,6 @@
  */
 
 /**
- * Require the response class and json serializer
- */
-require_once 'HTML/AJAX/Response.php';
-require_once 'HTML/AJAX/Serializer/JSON.php';
-
-/**
  * Helper class to eliminate the need to write javascript functions to deal with data
  *
  * This class creates information that can be properly serialized and used by

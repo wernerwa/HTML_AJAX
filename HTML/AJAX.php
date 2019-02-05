@@ -17,16 +17,6 @@
  */
 
 /**
- * This is a quick hack, loading serializers as needed doesn't work in php5
- */
-require_once "HTML/AJAX/Serializer/JSON.php";
-require_once "HTML/AJAX/Serializer/Null.php";
-require_once "HTML/AJAX/Serializer/Error.php";
-require_once "HTML/AJAX/Serializer/XML.php";
-require_once "HTML/AJAX/Serializer/PHP.php";
-require_once 'HTML/AJAX/Debug.php';
-    
-/**
  * OO AJAX Implementation for PHP
  *
  * @category  HTML
@@ -597,15 +587,8 @@ class HTML_AJAX
         if (isset($this->_serializers[$type])) {
             return $this->_serializers[$type];
         }
-    
+
         $class = 'HTML_AJAX_Serializer_'.$type;
-
-        if ( (version_compare(phpversion(), 5, '>') && !class_exists($class, false)) 
-            || (version_compare(phpversion(), 5, '<') && !class_exists($class)) ) {
-            // include the class only if it isn't defined
-            include_once "HTML/AJAX/Serializer/{$type}.php";
-        }
-
         //handle JSON loose typing option for associative arrays
         if ($type == 'JSON') {
             $this->_serializers[$type] = new $class($this->jsonLooseType);

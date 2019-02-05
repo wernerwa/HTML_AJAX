@@ -1,5 +1,4 @@
 <?php
-require_once 'HTML/AJAX/Serializer/JSON.php';
 // $Id
 /**
  * Error Serializer, for now just uses JSON

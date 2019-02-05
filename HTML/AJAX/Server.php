@@ -13,11 +13,6 @@
  */
 
 /**
- * Require the main AJAX library
- */
-require_once 'HTML/AJAX.php';
-
-/**
  * Class for creating an external AJAX server
  *
  * Can be used in 2 different modes, registerClass mode where you create an instance of the server and add the classes that will be registered

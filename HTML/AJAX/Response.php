@@ -13,11 +13,6 @@
  */
 
 /**
- * Require the main AJAX library
- */
-require_once 'HTML/AJAX.php';
-
-/**
  * Simple base class for a response object to use as an ajax callback
  *
  * This is the base response class, more interesting response classes can be
